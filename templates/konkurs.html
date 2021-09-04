@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konkurslar</title>
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <link href="{% static 'dizayn/style.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'fontawesome-free-5.15.4-web/css/all.css'%}">
+    <style>
+        .news{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    {% include 'header.html'%}
+    <div class="container" style="margin-bottom: 100px;">
+        
+            {%for kns in Contes%}
+            <div class="news" >
+                <div  style="width: 30%;">
+                    <img style="width: 100%; margin-top: 10px; " src="/admin{{kns.imageUrl}}">
+                </div>
+                <div style="width: 70%;margin-left: 10px;">
+                    <b style="font-size: 35px;">{{kns.name}}</b><br><hr>
+                    <b>{{kns.description}}</b><br><hr>
+                    <p>{{kns.prize}}</p><hr>
+                    <p>{{kns.info}}</p>
+                </div>
+            </div>
+            {%empty%}
+            <h1>HECH QANAQA MALUMOT YUQ</h1>
+            {%endfor%}
+        
+    </div>
+</body>
+</html>

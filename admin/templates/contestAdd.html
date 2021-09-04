@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+   
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container center" style="margin-top: 5%;width: 60%;padding: 3%;">
+        <form method="POST" enctype="multipart/form-data">{%csrf_token%}
+        <div class="col" >
+            <div class="row"style="height: 20vh;">
+                <img alt=" IMGES" style='width:25%;border: 1px solid rgb(179, 163, 163);margin-right: 2%;padding: 0; border-radius: 20px;' >
+                <div class="col" style="height: 35%;">
+                    <label>Konkursning nomi:</label>
+                    <input class="form-control center" name="name">
+                    <input id="inputGroupFile01" class="form-control center" style="height:90%; margin-top: 2%;" type="file" name="imageUrl">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col">
+            
+            <div class="row">
+                <label>Info</label>
+                <input class="form-control" name="description">
+            </div>
+            <div class="row">
+                <label>Mukofotlar</label>
+                <input class="form-control" name="prize">
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <label>To'liq malumoti</label>
+                <textarea class="form-control" name="info"></textarea>
+                <button style="margin-top: 2%;"class='btn-primary btn'>save</button>
+                <a style="margin-top: 2%;"class='btn-dark btn' href="/admin/contest">List</a>
+            </div>
+            
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>

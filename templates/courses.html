@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo'nalishlar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'fontawesome-free-5.15.4-web/css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'dizayn/style.css'%}">
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/065bd2220a0ad3b1ac90a7c3e0f8961e-removebg-preview (1).png'%}">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #courses{
+            display: flex;
+            flex-wrap: wrap;
+            
+            justify-content:center;
+        }
+        #courses li img{
+            width: 90%;
+            border-radius: 10px;
+            
+        }
+        #courses> li{
+            
+            width: 40%;
+            display: inline;
+            text-align: center;
+            margin-top: 10vh;
+            margin-left: 5%;
+            align-items: stretch;
+            justify-content:center;
+        }
+        #courses>li>a{
+            text-decoration: none;
+            color: black;   
+        }
+        #courses>li b{
+            font-size: 25px;
+            font-family: 'Cinzel', serif;
+        }
+        .container{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .courses{
+            display: flex;
+            
+            flex-wrap: wrap;
+        }
+        #cursor {
+            overflow: hidden;
+            position: fixed;
+            top: 200px;
+            left: 200px;
+        }
+    </style>
+
+</head>
+<body>
+{% include 'header.html'%}
+<div class="container">
+    <ul id="courses">
+        <li>
+            <a href="#">
+                <div ><img src="{%static 'img/unnamed.jpg'%}" alt="" ></div>
+                <div>
+                    <b>Dasgohliy rangtasvir rassomi</b><hr>
+                    <p>
+                        Asarlari mustaqil ahamiyatga ega bo'lib, atrof — muhitdan qat'i nazar.  Dastgohli bo'yoqning asosiy materiallari-yog', temperatura va akvarel bo'yoqlari, gouache, pastel, akril hisoblanadi.                    
+                    </p>
+
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                    <div><img src="{%static 'img/unnamed (1).jpg'%}" alt=""></div>
+                <div>
+                    <b>Mahobatli rangtasvir rassomi</b><hr>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error culpa quaerat eum! Vel commodi cupiditate repellendus deserunt ipsum labore quisquam obcaecati quis culpa quasi! Eaque unde voluptatem natus aperiam deserunt?
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/unnamed (2).jpg'%}" alt=""></div>
+                <div>
+                    <b>Qayta tiklash rassomi</b><hr>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptate praesentium nulla id, laboriosam vero similique laborum impedit sit saepe voluptatem asperiores alias perspiciatis amet architecto error eos animi excepturi?
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/a00e0d8421497c61ea7bb15ce17a6598.jpg'%}" alt=""></div>
+                <div>
+                    <b>Teatr liboslari san'ati rassomi</b><hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem asperiores, doloribus odio velit aliquid inventore praesentium autem distinctio. Provident vel dolores ea id quasi eligendi inventore officia dolorum sed incidunt.</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/interesting_201712190402430.jpg'%}" alt=""></div>
+                <div>
+                    <b>Grimchi-rassom</b><hr>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequuntur natus modi exercitationem minima dolorem! Optio non eaque aspernatur maiores! Impedit ullam doloremque quo aspernatur veritatis ea sapiente eveniet laudantium!</P>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/unnamed (3).jpg'%}" alt=""></div>
+                <div>
+                    <b>Teatr san'ati butaforia rassomi</b><hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim doloremque reiciendis modi vel possimus iure rerum odit ut, repudiandae, suscipit ex soluta eos libero ad commodi et voluptatem. Esse, quod?</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/1481604.jpg'%}" alt=""></div>
+                <div>
+                    <b>Teatr sahna bezagi rangtasvir rassomi</b><hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore expedita sequi nihil hic, ipsa delectus? Dolor, sint sapiente? Iure impedit reprehenderit neque quasi harum alias odit dolor iusto. Fugiat, ea?</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/applied-arts-museum6.jpg'%}" alt=""></div>
+                <div>
+                    <b>Mahobatli bezak San'ati rassomi</b><hr>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit excepturi deleniti placeat eum sit itaque fugiat alias perspiciatis laudantium aliquam labore veritatis hic iste, et vero? Laboriosam quasi iure eos.</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/97093efe6a61c60644b6970668bfdd530513.jpg'%}" alt=""></div>
+                <div>
+                    <b>Kino va televideniye rassomi</b><hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem officiis aliquid, voluptas reprehenderit eveniet, unde obcaecati enim quam, beatae ad impedit optio placeat incidunt! Nobis voluptatem explicabo minus autem non.</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/12 (2).jpg'%}" alt=""></div>
+                <div>
+                    <b>Grafika rassomi</b><hr>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates ipsam cumque, veniam quos quaerat dolor, tempore hic magnam, tempora iste sequi quibusdam recusandae atque dignissimos facere. Non assumenda facilis quaerat!</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/russkaya_lakovaya_miniatyura_.jpg'%}" alt=""></div>
+                <div>
+                    <b>Lakli miniatura rassomi</b><hr>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut adipisci autem nulla alias minima aperiam. Commodi ad dolore, voluptas ex odio expedita fugit culpa ratione similique! Aut temporibus quidem fugiat!</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/7039781_8_0_1059_594_1920x0_80_0_0_7944c0dcbef7aeadc5c3e5a1b688e4be.jpg'%}" alt=""></div>
+                <div>
+                    <b>Haykaltarosh</b><hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos amet quia architecto odit. Amet asperiores cupiditate quae explicabo provident fugit nostrum, voluptatem sed! Minima, esse tenetur? Dolor, itaque recusandae?</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/7979_html_m352e707e.jpg'%}" alt=""></div>
+                <div>
+                    <b>naqqoshlik bo'yicha usta-rassom</b><hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae commodi consectetur eligendi optio quae? Vero molestias hic aperiam nesciunt quam, ullam quae neque maxime exercitationem itaque quasi veritatis! Nulla.</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/16_0.jpg'%}" alt=""></div>
+                <div>
+                    <b>Yog'och o'ymakorlik bo'yicha usta-rassom</b><hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam sint saepe beatae labore vero molestiae alias esse. Iure ratione doloribus blanditiis numquam, laborum explicabo recusandae autem aperiam reiciendis unde dolore!</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><img src="{%static 'img/292795.jpg'%}" alt=""></div>
+                <div>
+                    <b>zargarlik buyumlari usta-rassom</b><hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate non molestiae voluptatibus similique asperiores quam obcaecati quo dolore. Minima laboriosam id dolores molestias autem nobis ducimus, labore repellendus ab quis.</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

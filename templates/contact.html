@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktlar</title>
+    <link rel="stylesheet" href="{%static 'fontawesome-free-5.15.4-web/css/all.css'%}">
+    <link rel="stylesheet" href="{% static 'dizayn/style.css'%}">
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/065bd2220a0ad3b1ac90a7c3e0f8961e-removebg-preview (1).png'%}">
+    <style>
+        .container{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    {% include 'header.html'%}
+    <div class="container" style="text-align: center;margin-top: 10vh;">
+        <b>Manzil: Toshkent shahar Shoyhontohur tumani Furqat ko'chasi 6-uy </b><br>
+        <b>Bog'lanish: </b><br>
+        <b>Telefon:(71) 245-05-56</b><br>
+        <b>Faks:(71) 245-05-56</b><br>
+        <b>Email: info@benkov.uz</b>
+        
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.benkov{
+    background: url("../img/benkov.jpg") center  fixed;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    margin-top: -2vh;
+    height: 100vh;
+    animation: 2s textAnimate ease-in;
+}
+.benkov>div{
+    position: relative;
+    z-index: 3;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.benkov>div>b{
+    font-size: 40px;
+    font-family: 'Architects Daughter', cursive;
+}
+.benkov>div>img{
+    width: 30%;border-radius: 50%; border: 7px solid white; margin-top: 5vh;
+}
+
+
+
+#animationText{
+    padding-top: 2vh;
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+}
+.progressbar{
+    counter-reset: step;
+}
+.progressbar li{
+    list-style: none;
+    height: 50vh;
+    position: relative;
+    text-align: center;
+}
+.progressbar li::before{
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+}
+.progressbar li::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 50vh;
+    background-color: #c3c3c3;
+    top: 0;
+    right: 50%;
+    z-index: -1;
+}
+.progressbar>li >aside{
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
+    height: 90%;
+    margin-top: -0.5%;
+    width: 50%;
+    font-size: 20px;
+}
+@keyframes animateImg{
+    0%{
+        transform:  scale(0);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform:  scale(1);
+    }
+}
+
+
+
+.slideshow-container:after,.benkov:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(24, 24, 24, 0.5);
+    z-index: 2;
+}
+.courses{
+  position: relative;
+  -webkit-background-size: cover;
+    background-size: cover;
+  z-index: 2;
+  color:white;
+}
+
+
+
+#courses{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  z-index: 3;
+}
+#courses> li{
+    width: 20%;
+    list-style: none;
+    text-align: center;
+    margin-top: 10vh;
+    margin-left: 5%;
+    align-items: stretch;
+    justify-content:center;
+}
+#courses>li>a{
+    text-decoration: none;
+    color: white;   
+}
+#courses >li img{
+    width: 90%;
+    border-radius: 10px;
+}
+#courses>li b{
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
+}
+
+
+
+.btn{
+  height: auto;
+  position: relative;
+  z-index: 3;
+  margin-top: 5vh;
+  float: right;
+  margin-right: 30px;
+}
+
+
+
+
+.mySlides {display: none; height: 100%;}
+
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 100%;
+height: 90vh;
+position: relative;
+margin-top: -3vh;
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: rgb(0, 0, 0);
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+.active {
+background-color: #7e7e7e;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.text {font-size: 11px}
+}

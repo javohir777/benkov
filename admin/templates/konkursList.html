@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+</head>
+<body>
+    <table class="table container">
+        <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>imageUrl</th>
+            <th>Tavsif</th>
+            <th>Mukofotlar</th>
+            <th>Malumot</th>
+            <th></th>
+        </thead>
+        
+        <tbody>
+            {%for kns in Contes%}
+            <tr>
+                <td>{{kns.id}}</td>
+                <td>{{kns.name}}</td>
+                <td><img src="/admin{{kns.imageUrl}}" alt="/admin{{kns.imageUrl}}" style="width: 200px;"></td>
+                <td>{{kns.description}}</td>
+                <td>{{kns.prize}}</td>
+                <td>{{kns.info}}</td>
+                <td><a class="btn btn-dark" href="delete/{{kns.id}}">delete</a></td>
+            </tr>
+            {%empty%}
+            <tr>
+                <td>Empty</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+    <center><a href="/admin/contestAdd" class="btn btn-primary row container">ADD</a></center>
+    <center><a href="/admin" class="btn btn-dark row container">home</a></center>
+</body>
+</html>

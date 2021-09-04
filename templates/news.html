@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yangiliklar</title>
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <link href="{% static 'dizayn/style.css'%}" rel="stylesheet"> 
+    <link rel="stylesheet" href="{%static 'fontawesome-free-5.15.4-web/css/all.css'%}">
+    <link rel="icon" href="{% static 'img/065bd2220a0ad3b1ac90a7c3e0f8961e-removebg-preview (1).png'%}">
+    <style>
+        .news{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body >
+    {% include 'header.html'%}
+    <div class="container" style="margin-bottom: 100px;">
+        <a>
+            {%for new in News%}
+            <div class="news">
+                <div style="width: 40%;">
+                    <img style="height: auto; width: 100%;" src="/admin{{new.imageUrl}}">
+                </div>
+                <div style="width: 50%;margin-left: 10px;">
+                    <b style="width: 15%; font-size: 40px;">{{new.name}}</b><br><hr>
+                    <i style="width: 10%;">{{new.data}}</i><br><hr>
+                    <b style="width: 25%;">{{new.description}}</b><br><hr>
+                    <i style="width: 30%;">{{new.info}}</i>
+                    
+                </div>
+            </div>
+            {%empty%}
+            <div class="row" style="width: 90%; height: 10vh;margin-left: auto;margin-right: auto;border-radius: 20px; background-color: white;">Hech qanaqa malumot yuq</div>
+            {%endfor%}
+        </a> 
+    </div>
+</body>
+</html>

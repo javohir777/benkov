@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benkov</title>
+    <link rel="stylesheet" href="{%static 'fontawesome-free-5.15.4-web/css/all.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'dizayn/style.css'%}">
+    <link href="{% static 'css/bootstrap.css'%}" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/065bd2220a0ad3b1ac90a7c3e0f8961e-removebg-preview (1).png'%}">
+    <link rel="stylesheet" href="{% static 'dizayn/home.css'%}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+    @keyframes textAnimate{
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+    }
+    .fadet {
+    -webkit-animation-name: fadet;
+    animation-name: fadet;
+    animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fadet {
+      from {opacity: .1} 
+      to {opacity: 1}
+    }
+
+    @keyframes fadet {
+      from {opacity: .1} 
+      to {opacity: 1}
+    }
+  .progressbar>li >aside{
+    animation: 6s textAnimate initial ease-in;
+  }
+  .one{background-image: url("{%static 'img/12.jpg'%}");background-size: cover;}
+    </style>
+</head>
+<body>
+  {% include 'header.html'%}
+  <div class='benkov'>
+    <div >
+      <img src="{%static 'img/pbenkov.jpg'%}" alt="" style="animation: 4s animateImg  ease-in-out;"><br>
+      <b>P.Benkov</b><hr>
+      <i style="animation: 3s textAnimate  ease-in;">Pavel Petrovich Benkov Kazanda 8 (20) dekabr 1879 yilida hunarmandlar oilasida tug'ilgan (ota-onalar xafa bo'lgan ustaxonani saqlab qolishgan). 1895da 1901-da bitirgan Qozonda ochilgan san'at maktabining birinchi to'plamiga kirdi, shu yili Sankt-Peterburgdagi Imperial badiiy akademiyasi qoshidagi oliy san'at maktabiga o'qishga kirdi. 1902-dan Dn Kardovskiy ustaxonasiga tayinlangan, ayni paytda o'z tashabbusi bilan I. E. Repinning darslarida qatnashgan. Tadqiqotlar davomida u juda ko'p sayohat qildi: Uralsda 1900da vogullarning hayotini o'rganib chiqdi( ugrik Mansi xalqining eskirgan nomi); akademiya stipendiyasi Frantsiyaga sayohat qilib, Parijda (1905) Julianning maxsus maktabida (Akademie Julian) dars olib, Italiya (1906,1908), Ispaniya (1908). Imperator badiiy akademiyasi huzuridagi oliy san'at bilim yurtini tamomlagan (1909), tanlov ishi uchun rassom unvoniga sazovor bo'lgan "taqdirga bo'ysunish"[1] (saqlanmagan). 1909da qozonga o'qituvchi sifatida qaytib keldi
+    </div>
+  </div>
+
+  <div id="animationText">
+    <ul class="progressbar">
+        <li>
+            <aside data-aos="fade-right" style="text-align: center;padding: 2vh;">
+              <img src="{%static 'img/i.jpg' %}" alt="BENKOV KICHIK RASSOM"style="width:50%;height:40%; border-radius:20%;">
+              <i>Assalomu aleykum, <br> aziz o'quvchi siz rasm chizishga,liboslarga,teatr sahna bezagiga va rassomchiligga oid ishlarga qiziqsangiz!! <br><b style="color: green; font-size: 30px;">Pavel Benkov </b><br> nomidagi Respublika ixtisoslashtrlgan<br>  rassomlik maktabi sizni o'qshga taklif qiladi.</i>
+            </aside>
+        </li>
+        <li>
+            <aside style="float: right;"data-aos="fade-left">
+              <i><b style="color: green; font-size: 30px;">P.Benkov </b><br>-da siz uzingizni qiziqtirgan yunalishda o'qishingiz mumkin buladi. <br>
+              <b style="float: left; margin-left: 5vh;">Masalan :</b><br>
+              <p style="font-size: 18px; float: left;margin-left: 10px;margin-bottom: 0;">1. Devorlarga rasm chizishga qiziqsangiz:<b>Mahobatli rangtasvir</b></p>
+              <p style="font-size: 18px; float: left;margin-left: 10px;margin-bottom: 0;">2. Teatr sahna bezagiga qiziqsangiz: <b>Teatr sahna bezagi</b></p>
+              <p style="font-size: 18px; float: left;margin-left: 10px;margin-bottom: 0;">3. Haykal yasashga qiziqsangiz: <b> Haykaltarosh</b></p>
+              <br><br><br><p>yo'nalishlarida o'qishngiz mumkin </p>
+              <a href="/courses" style="color: cornflowerblue;"> Hamma yo'nalishlar</a>
+              </i>
+            </aside>
+        </li>
+        <li>
+            <aside data-aos="fade-down-right">
+              <i style="font-size: 30px;">Maktabimiz to'g'risida barcha yangiliklar, konkurslar, malumotlar ,raxbarlar haqida malumotlarni <a href="/" style="color: cornflowerblue;">shu saytda</a> yoki ishtimoiy tarmoqlarda kuzatib boring!!</i><br><br>
+              <a href="#"><img src="{%static 'img/facebook.png'%}" alt="facebook" style="width: 8vh;"></a>
+              <a href="#"><img src="{%static 'img/instagram.png'%}" alt=""style="width: 8vh;"></a>
+              <a href="#" ><img src="{%static 'img/telegram.png'%}" alt=""style="width: 8vh;border: 1.5px dashed cornflowerblue; border-radius:50%;padding:0.2vh; "></a>
+            </aside>
+        </li>
+    </ul>
+  
+  </div>
+
+  <div class="courses">
+    <hr style="color: black;">
+    <label style="font-family: 'Architects Daughter', cursive;text-shadow: 5px 5px 5px #3f3f3f, 0 0 1em #c3c3c3; width: 100%;text-align: center;  font-size: 50px;color: black; ">Yo'nalishlar<hr ></label>
+    <a href="/courses/" class="btn btn-primary" >Hamma yo'nalishlar</a>
+    <div class="slideshow-container one"style="background-color:white" >
+      <div class="mySlides  fadet">
+          
+          <ul id="courses" >
+            <li>
+              <a href="#">
+                <div><img src="{%static 'img/unnamed.jpg'%}" alt="" ></div>
+                <div>
+                  <b>Dasgohliy rangtasvir rassomi</b><hr>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, possimus similique totam est sequi earum assumenda quam deleniti, ducimus illum mollitia ex ad natus sapiente nostrum sed provident? Inventore, doloribus!</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img src="{%static 'img/7039781_8_0_1059_594_1920x0_80_0_0_7944c0dcbef7aeadc5c3e5a1b688e4be.jpg'%}" alt=""></div>
+                <div>
+                  <b>Haykaltarosh</b><hr>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos amet quia architecto odit. Amet asperiores cupiditate quae explicabo provident fugit nostrum, voluptatem sed! Minima, esse tenetur? Dolor, itaque recusandae?</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img src="{%static 'img/16_0.jpg'%}" alt=""></div>
+                <div>
+                  <b>Yog'och o'ymakorlik bo'yicha usta-rassom</b><hr>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam sint saepe beatae labore vero molestiae alias esse. Iure ratione doloribus blanditiis numquam, laborum explicabo recusandae autem aperiam reiciendis unde dolore!</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+      </div>
+  
+      <div class="mySlides  fadet" >
+          
+          <ul id="courses">
+            <li>
+              <a href="#">
+                <div><img src="{%static 'img/a00e0d8421497c61ea7bb15ce17a6598.jpg'%}" alt="" ></div>
+                <div>
+                  <b>Teatr liboslari san'ati rassomi</b><hr>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, possimus similique totam est sequi earum assumenda quam deleniti, ducimus illum mollitia ex ad natus sapiente nostrum sed provident? Inventore, doloribus!</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img src="{%static 'img/interesting_201712190402430.jpg'%}" alt=""></div>
+                <div>
+                  <b>Grimchi-rassom</b><hr>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos amet quia architecto odit. Amet asperiores cupiditate quae explicabo provident fugit nostrum, voluptatem sed! Minima, esse tenetur? Dolor, itaque recusandae?</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img src="{%static 'img/unnamed (3).jpg'%}" alt=""></div>
+                <div>
+                  <b>Teatr san'ati butaforia rassomi</b><hr>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam sint saepe beatae labore vero molestiae alias esse. Iure ratione doloribus blanditiis numquam, laborum explicabo recusandae autem aperiam reiciendis unde dolore!</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          
+      </div>
+  
+      <div class="mySlides  fadet">
+          
+          <ul id="courses" >
+            <li>
+              <a href="#">
+                <div><img src="{%static 'img/1481604.jpg'%}" alt="" ></div>
+                <div>
+                  <b>Teatr sahna bezagi rangtasvir rassomi</b><hr>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, possimus similique totam est sequi earum assumenda quam deleniti, ducimus illum mollitia ex ad natus sapiente nostrum sed provident? Inventore, doloribus!</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img src="{%static 'img/applied-arts-museum6.jpg'%}" alt=""></div>
+                <div>
+                  <b>Mahobatli bezak San'ati rassomi</b><hr>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos amet quia architecto odit. Amet asperiores cupiditate quae explicabo provident fugit nostrum, voluptatem sed! Minima, esse tenetur? Dolor, itaque recusandae?</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div><img src="{%static 'img/97093efe6a61c60644b6970668bfdd530513.jpg'%}" alt=""></div>
+                <div>
+                  <b>Kino va televideniye rassomi</b><hr>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam sint saepe beatae labore vero molestiae alias esse. Iure ratione doloribus blanditiis numquam, laborum explicabo recusandae autem aperiam reiciendis unde dolore!</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+      </div>
+      <div style="text-align:center; margin-top: -10vh;">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top: -30vh; padding-bottom: 10vh;background-color: black; color: white;">
+  {% include 'contact.html'%}
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 7000); 
+  }
+</script>
+</body>
+</html>
